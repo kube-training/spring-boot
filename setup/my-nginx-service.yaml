@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: springboot-helloworld
+  namespace: development
+  labels:
+    run: springboot-helloworld
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    run: springboot-helloworld

@@ -1,0 +1,11 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: springboot-helloworld
+  namespace: development
+  labels:
+    run: springboot-helloworld
+spec:
+  backend:
+    serviceName: springboot-helloworld
+    servicePort: 80
