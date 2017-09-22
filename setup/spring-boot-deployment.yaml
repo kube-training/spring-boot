@@ -1,20 +1,20 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: springboot-helloworld
+  name: spring-boot
   namespace: development
   labels:
-    app: springboot-helloworld
+    app: spring-boot
 spec:
   replicas: 2
   template:
     metadata:
       namespace: development
       labels:
-        run: springboot-helloworld
+        run: spring-boot
     spec:
       containers:
       - name: my-nginx
-        image: kubelab/springboot-helloworld:1.0
+        image: kubelab/spring-boot:latest
         ports:
         - containerPort: 80
