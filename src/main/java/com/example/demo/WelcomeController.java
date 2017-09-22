@@ -8,6 +8,7 @@ public class WelcomeController {
 
 	@RequestMapping("/")
 	public String welcome() {
+		system.out.println("calling springboot api /");
 		return "Hello World !";
 	}
 
