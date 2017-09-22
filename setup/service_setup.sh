@@ -1,11 +1,11 @@
 # create some pods under a deployment
-echo '** kubectl create -f ./springboot-helloworld-service.yaml'
-kubectl create -f ./springboot-helloworld-service.yaml
+echo '** kubectl create -f ./spring-boot-service.yaml'
+kubectl create -f ./spring-boot-service.yaml
 
-# get service  my-nginx
-echo '** kubectl --namespace=development get svc springboot-helloworld'
-kubectl --namespace=development get svc springboot-helloworld
+# get service  spring-boot
+echo '** kubectl --namespace=development get svc spring-boot'
+kubectl --namespace=development get svc spring-boot
 
 # describe service hostnames
-echo '** kubectl --namespace=development describe svc springboot-helloworld'
-kubectl --namespace=development describe svc springboot-helloworld
+echo '** kubectl --namespace=development describe svc spring-boot'
+kubectl --namespace=development describe svc spring-boot
