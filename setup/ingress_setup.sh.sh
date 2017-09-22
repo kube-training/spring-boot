@@ -1,11 +1,11 @@
-# create Ingress for springboot-helloworld service
-echo '** kubectl create -f ./springboot-helloworld-ingress.yaml'
-kubectl create -f ./springboot-helloworld-ingress.yaml
+# create Ingress for spring-boot service
+echo '** kubectl create -f ./spring-boot-ingress.yaml'
+kubectl create -f ./spring-boot-ingress.yaml
 
-# get Ingress  springboot-helloworld
-echo '** kubectl --namespace=development get ing springboot-helloworld'
-kubectl --namespace=development get ing springboot-helloworld
+# get Ingress  spring-boot
+echo '** kubectl --namespace=development get ing spring-boot'
+kubectl --namespace=development get ing spring-boot
 
-# describe springboot-helloworld ingress
-echo '** kubectl --namespace=development describe ing springboot-helloworld'
-kubectl --namespace=development describe ing springboot-helloworld
+# describe spring-boot ingress
+echo '** kubectl --namespace=development describe ing spring-boot'
+kubectl --namespace=development describe ing spring-boot
