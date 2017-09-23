@@ -14,7 +14,7 @@ spec:
         run: spring-boot
     spec:
       containers:
-      - name: my-nginx
+      - name: spring-boot
         image: kubelab/spring-boot:latest
         ports:
         - containerPort: 80
